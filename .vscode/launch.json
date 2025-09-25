@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "Backend-Engineer-Assignment:app.score_lead_rules (python3.12)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/",
+                "lambdaHandler": "app.score_lead_rules"
+            },
+            "lambda": {
+                "runtime": "python3.12",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}
