@@ -25,6 +25,12 @@ AI_SCORE_MAPPING = {
     "low": 10
 }
 
+@app.route('/', methods=['GET'])
+def home():
+    """
+    Returns a simple message to confirm the API is running.
+    """
+    return jsonify({"message": "API is running successfully!"}), 200
 # -------------------- Rule-Based Scoring -------------------- #
 def score_lead_rules(lead, offer):
     score = 0
